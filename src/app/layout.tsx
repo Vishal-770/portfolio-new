@@ -5,8 +5,8 @@ import Navbar from "@/components/Navbar";
 import { Pointer } from "@/components/magicui/pointer";
 const exo2 = Exo_2({ subsets: ["latin"], variable: "--font-exo2" });
 export const metadata = {
-  title: "Your Site Title",
-  description: "Your site description",
+  title: "Vishal || Full Stack Web Dev ",
+  description: "Vishal Prabhu's portfolio – Full-stack developer skilled in Node.js, Express, MongoDB, and modern frontend tech like Next.js. Explore projects, skills, and connect.",
   other: {
     "google-site-verification": "0KhnKOKhrPmQmqbVYEwJTH2w2Q2HQzxaqsQuukyvW9U",
   },
