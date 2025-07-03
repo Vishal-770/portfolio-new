@@ -4,10 +4,12 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Pointer } from "@/components/magicui/pointer";
 const exo2 = Exo_2({ subsets: ["latin"], variable: "--font-exo2" });
-export const metadata: Metadata = {
-  title: "Vishal | Full-Stack Developer Portfolio",
-  description:
-    "Explore the portfolio of Vishal, a full-stack web developer specializing in modern web technologies like Next.js, React, TypeScript, and Tailwind CSS.",
+export const metadata = {
+  title: "Your Site Title",
+  description: "Your site description",
+  other: {
+    "google-site-verification": "0KhnKOKhrPmQmqbVYEwJTH2w2Q2HQzxaqsQuukyvW9U",
+  },
 };
 
 export default function RootLayout({
