@@ -26,9 +26,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </div>
-        <Pointer>
-          <div className="text-2xl ">😼</div>
-        </Pointer>
+        <Pointer className="fill-blue-500" />
         <DockContainer />
       </body>
     </html>
