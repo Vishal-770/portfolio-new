@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
-import { Home, File, Contact, Settings } from "lucide-react";
+import { Home, File, Contact, Phone } from "lucide-react";
 import Dock from "@/blocks/Components/Dock/Dock";
 
 const DockContainer = () => {
@@ -25,7 +25,7 @@ const DockContainer = () => {
       onClick: () => router.push("/about"),
     },
     {
-      icon: <Settings size={18} />,
+      icon: <Phone size={18} />,
       label: "Contact",
       onClick: () => router.push("/contact"),
     },

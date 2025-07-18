@@ -86,18 +86,21 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row gap-4 mt-4 justify-center lg:justify-start"
           variants={item}
         >
-          <Link href={"/contact"}>
-            <motion.button
-              className="px-6 py-3 bg-main-text text-white rounded-xl font-semibold hover:bg-main-text/90 transition"
-              variants={buttonAnim}
-              initial="rest"
-              whileHover="hover"
-              whileTap="pressed"
-            >
-              Get In Touch
-            </motion.button>
-          </Link>
-          <Link href={"/projects"}>
+          <motion.a
+            href="https://ucqqicesfjrnrjqwxsdf.supabase.co/storage/v1/object/public/uploads/fileuploads/1752820858440-VISHAL_PRABHU_resume%20(4)-1.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+            className="px-6 py-3 bg-main-text text-white rounded-xl font-semibold hover:bg-main-text/90 transition text-center"
+            variants={buttonAnim}
+            initial="rest"
+            whileHover="hover"
+            whileTap="pressed"
+          >
+            Download CV
+          </motion.a>
+
+          <Link href="/projects">
             <motion.button
               className="px-6 py-3 border border-gray-700 text-gray-700 rounded-xl font-semibold hover:bg-black/80 hover:text-white transition"
               variants={buttonAnim}

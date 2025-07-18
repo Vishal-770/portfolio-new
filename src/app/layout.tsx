@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Pointer } from "@/components/magicui/pointer";
 import DockContainer from "@/components/DockContainer";
+import { LoadingBarProvider } from "@/components/loading-bar-provider";
 const exo2 = Exo_2({ subsets: ["latin"], variable: "--font-exo2" });
 export const metadata = {
   title: "Vishal || Full Stack Web Dev ",
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${exo2.variable} antialiased min-h-screen w-full`}>
+        <LoadingBarProvider />
         <div className="flex flex-col w-full h-full">
           <Navbar />
           {children}
