@@ -11,46 +11,46 @@ export function TimelineDemo() {
         <div>
           <p className="mb-8 text-sm md:text-base font-semibold text-black dark:text-neutral-200">
             Started my web development journey by learning{" "}
-            <span className="text-main-text">HTML</span>,{" "}
-            <span className="text-main-text">CSS</span>, and{" "}
-            <span className="text-main-text">JavaScript</span>. Built small
+            <span className="text-primary">HTML</span>,{" "}
+            <span className="text-primary">CSS</span>, and{" "}
+            <span className="text-primary">JavaScript</span>. Built small
             websites and practiced core front-end concepts.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Lens>
               <img
                 src="/currency.png"
-                alt="startup template"
+                alt="Currency converter project"
                 width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
             <Lens>
               <img
                 src="/Image1.png"
-                alt="startup template"
+                alt="Web development project"
                 width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
             <Lens>
               <img
                 src="/image2.png"
-                alt="startup template"
+                alt="Frontend project"
                 width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
             <Lens>
               <img
                 src="/image3.png"
-                alt="startup template"
+                alt="JavaScript project"
                 width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
           </div>
@@ -62,7 +62,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="mb-8 text-sm md:text-base font-semibold text-black dark:text-neutral-200">
-            Learned <span className="text-main-text">React.js</span> and started
+            Learned <span className="text-primary">React.js</span> and started
             building dynamic, component-based applications. Explored state
             management, hooks, and routing using React Router.
           </p>
@@ -70,37 +70,37 @@ export function TimelineDemo() {
             <Lens>
               <img
                 src="/image4.png"
-                alt="startup template"
+                alt="React.js project"
                 width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
             <Lens>
               <img
                 src="/image5.png"
-                alt="startup template"
+                alt="Component-based application"
                 width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
             <Lens>
               <img
                 src="/image6.png"
-                alt="startup template"
+                alt="React Router project"
                 width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
             <Lens>
               <img
                 src="/image7.png"
-                alt="startup template"
+                alt="React hooks project"
                 width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
           </div>
@@ -113,9 +113,9 @@ export function TimelineDemo() {
         <div>
           <p className="mb-8 text-sm md:text-base font-semibold text-black dark:text-neutral-200">
             Ventured into backend development with{" "}
-            <span className="text-main-text">Node.js</span>,{" "}
-            <span className="text-main-text">Express.js</span>, and{" "}
-            <span className="text-main-text">MongoDB</span>. Built REST APIs,
+            <span className="text-primary">Node.js</span>,{" "}
+            <span className="text-primary">Express.js</span>, and{" "}
+            <span className="text-primary">MongoDB</span>. Built REST APIs,
             practiced CRUD operations, and understood the fundamentals of server
             architecture and databases.
           </p>
@@ -123,28 +123,28 @@ export function TimelineDemo() {
             <Lens>
               <img
                 src="/express.webp"
-                alt="hero template"
+                alt="Express.js backend development"
                 width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
             <Lens>
               <img
                 src="/mongodb.png"
-                alt="hero template"
+                alt="MongoDB database"
                 width={500}
-                height={500}
-                className=" w-full rounded-lg object-cover shadow-[...] "
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
             <Lens>
               <img
                 src="/nodejs.jpg"
-                alt="hero template"
+                alt="Node.js server development"
                 width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
           </div>
@@ -157,38 +157,38 @@ export function TimelineDemo() {
         <div>
           <p className="mb-8 text-sm md:text-base font-semibold text-black dark:text-neutral-200">
             Selected for three vibrant student communities at VIT Chennai:{" "}
-            <span className="text-main-text">Android Club</span>,{" "}
-            <span className="text-main-text">DAO Community</span>, and{" "}
-            <span className="text-main-text">TEDx VIT Chennai</span>. These
-            groups offered immense exposure to collaboration, creativity, and
+            <span className="text-primary">Android Club</span>,{" "}
+            <span className="text-primary">DAO Community</span>, and{" "}
+            <span className="text-primary">TEDx VIT Chennai</span>. These groups
+            offered immense exposure to collaboration, creativity, and
             real-world projects.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Lens>
               <img
                 src="/android.jpg"
-                alt="hero template"
-                width={200}
-                height={200}
-                className="h-full w-full rounded-lg object-cover shadow-[...]"
+                alt="Android Club VIT Chennai"
+                width={500}
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
             <Lens>
               <img
                 src="/DAO.png"
-                alt="hero template"
-                width={200}
-                height={200}
-                className="h-full w-full rounded-lg object-cover shadow-[...]"
+                alt="DAO Community"
+                width={500}
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
             <Lens>
               <img
                 src="/Tedx.png"
-                alt="hero template"
-                width={200}
-                height={200}
-                className="h-full w-full rounded-lg object-cover shadow-[...]"
+                alt="TEDx VIT Chennai"
+                width={500}
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
           </div>
@@ -201,30 +201,30 @@ export function TimelineDemo() {
         <div>
           <p className="mb-8 text-sm md:text-base font-semibold text-black dark:text-neutral-200">
             Started full-stack projects with{" "}
-            <span className="text-main-text">Next.js</span>. Learned about SSR,
+            <span className="text-primary">Next.js</span>. Learned about SSR,
             API routes, authentication, and integrated backend logic with
             frontend UI. Also explored modern libraries like{" "}
-            <span className="text-main-text">Clerk</span>,{" "}
-            <span className="text-main-text">TanStack Query</span>, and{" "}
-            <span className="text-main-text">ShadCN UI</span>.
+            <span className="text-primary">Clerk</span>,{" "}
+            <span className="text-primary">TanStack Query</span>, and{" "}
+            <span className="text-primary">ShadCN UI</span>.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Lens>
               <img
                 src="/url.png"
-                alt="hero template"
+                alt="URL Shortener Next.js project"
                 width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
             <Lens>
               <img
                 src="/fileshare.png"
-                alt="hero template"
+                alt="File sharing application"
                 width={500}
-                height={500}
-                className="h-20 w-full rounded-lg object-cover shadow-[...] md:h-44 lg:h-60"
+                height={375}
+                className="w-full aspect-[4/3] rounded-lg object-cover shadow-md"
               />
             </Lens>
           </div>

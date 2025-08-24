@@ -91,7 +91,7 @@ function DockItem({
       onFocus={() => isHovered.set(1)}
       onBlur={() => isHovered.set(0)}
       onClick={onClick}
-      className={`relative inline-flex items-center justify-center rounded-full bg-white text-main-text border-neutral-300 border-2 shadow-md ${className}`}
+      className={`relative inline-flex items-center justify-center rounded-full bg-background text-primary border-border border-2 shadow-md ${className}`}
       tabIndex={0}
       role="button"
       aria-haspopup="true"
@@ -99,9 +99,14 @@ function DockItem({
       {Children.map(children, (child) => {
         if (
           React.isValidElement(child) &&
-          (child.type === DockLabel || (typeof child.type === "function" && child.type.name === "DockLabel"))
+          (child.type === DockLabel ||
+            (typeof child.type === "function" &&
+              child.type.name === "DockLabel"))
         ) {
-          return cloneElement(child as React.ReactElement<{ isHovered?: MotionValue<number> }>, { isHovered });
+          return cloneElement(
+            child as React.ReactElement<{ isHovered?: MotionValue<number> }>,
+            { isHovered }
+          );
         }
         return child;
       })}
@@ -134,7 +139,7 @@ function DockLabel({ children, className = "", ...rest }: DockLabelProps) {
           animate={{ opacity: 1, y: -10 }}
           exit={{ opacity: 0, y: 0 }}
           transition={{ duration: 0.2 }}
-          className={`${className} absolute -top-6 left-1/2 w-fit whitespace-pre rounded-md border border-neutral-300 bg-white px-2 py-0.5 text-xs text-black shadow-md`}
+          className={`${className} absolute -top-6 left-1/2 w-fit whitespace-pre rounded-md border border-border bg-popover px-2 py-0.5 text-xs text-popover-foreground shadow-md`}
           role="tooltip"
           style={{ x: "-50%" }}
         >
@@ -192,7 +197,7 @@ export default function Dock({
           isHovered.set(0);
           mouseX.set(Infinity);
         }}
-        className={`${className} absolute bottom-2 left-1/2 transform -translate-x-1/2 flex items-end w-fit gap-4 rounded-2xl border-2 border-neutral-300 bg-white text-black pb-2 px-4 shadow-xl`}
+        className={`${className} absolute bottom-2 left-1/2 transform -translate-x-1/2 flex items-end w-fit gap-4 rounded-2xl border-2 border-border bg-background text-foreground pb-2 px-4 shadow-xl`}
         style={{ height: panelHeight }}
         role="toolbar"
         aria-label="Application dock"

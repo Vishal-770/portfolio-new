@@ -4,7 +4,7 @@
 }
 
 #nprogress .bar {
-  background: #7a1ff2; /* Indigo-500 */
+  background: hsl(var(--primary)); /* Primary color */
   position: fixed;
   z-index: 9999;
   top: 0;

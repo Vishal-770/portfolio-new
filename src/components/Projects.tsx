@@ -89,7 +89,7 @@ const Projects = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-4xl font-bold tracking-tight text-main-text sm:text-5xl"
+          className="text-4xl font-bold tracking-tight text-primary sm:text-5xl"
         >
           My Projects
         </motion.h1>
@@ -97,7 +97,7 @@ const Projects = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.6 }}
-          className="mt-4 text-lg text-black"
+          className="mt-4 text-lg text-foreground"
         >
           Here are some of the projects I&#39;ve worked on recently
         </motion.p>
@@ -136,10 +136,10 @@ const Projects = () => {
               }`}
             >
               <CardContent className="flex-1 flex flex-col p-8">
-                <CardTitle className="text-3xl font-bold text-main-text">
+                <CardTitle className="text-3xl font-bold text-primary">
                   {project.title}
                 </CardTitle>
-                <CardDescription className="mt-4 text-lg text-black">
+                <CardDescription className="mt-4 text-lg text-foreground">
                   {project.description}
                 </CardDescription>
                 <div className="mt-8 flex flex-wrap gap-3">
@@ -147,7 +147,7 @@ const Projects = () => {
                     <Badge
                       key={techIndex}
                       variant="outline"
-                      className="text-base font-medium border-main-text/20 text-black hover:bg-main-text/10"
+                      className="text-base font-medium border-primary/20 text-foreground hover:bg-primary/10"
                     >
                       {tech}
                     </Badge>
@@ -157,7 +157,7 @@ const Projects = () => {
                   <Button
                     asChild
                     variant="outline"
-                    className="gap-2 border-main-text text-main-text hover:bg-main-text/10 hover:text-main-text"
+                    className="gap-2 border-primary text-primary hover:bg-primary/10 hover:text-primary"
                   >
                     <LinkPreview url={project.projectUrl}>
                       View Project <ArrowUpRight className="h-4 w-4" />

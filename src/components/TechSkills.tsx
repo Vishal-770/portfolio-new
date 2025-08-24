@@ -78,7 +78,7 @@ const TechCard = ({
       className={cn(
         "flex w-64 flex-col gap-2 rounded-xl border p-4 transition hover:scale-[1.02]",
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-        "dark:border-white/[.05] dark:bg-white/[.03] dark:hover:bg-white/[.06]",
+        "border-border/50 bg-card/50 hover:bg-card/80",
         color
       )}
     >
@@ -88,10 +88,7 @@ const TechCard = ({
       </div>
       <ul className="flex flex-wrap gap-1 text-xs text-muted-foreground">
         {items.map((item) => (
-          <li
-            key={item}
-            className="rounded bg-white/10 px-2 py-1 dark:bg-white/5"
-          >
+          <li key={item} className="rounded bg-muted px-2 py-1">
             {item}
           </li>
         ))}
@@ -109,7 +106,7 @@ export default function TechSkills() {
 
   return (
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden py-10 space-y-6">
-      <h1 className="font-exo-2 font-black text-4xl text-main-text mb-15">
+      <h1 className="font-exo-2 font-black text-4xl text-primary mb-15">
         Tech Skills
       </h1>
       {rows.map((group, index) => (

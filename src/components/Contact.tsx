@@ -48,7 +48,7 @@ export const ContactSection = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="text-4xl md:text-5xl font-bold  bg-clip-text bg-gradient-to-r from-primary to-primary/70 mb-5 text-main-text"
+            className="text-4xl md:text-5xl font-bold  bg-clip-text bg-gradient-to-r from-primary to-primary/70 mb-5 text-primary"
           >
             Let&#39;s Work Together
           </motion.h2>
@@ -72,7 +72,7 @@ export const ContactSection = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="w-full p-8 rounded-xl border border-border/50 bg-background shadow-sm"
           >
-            <h3 className="text-2xl font-semibold mb-8 text-main-text">
+            <h3 className="text-2xl font-semibold mb-8 text-primary">
               Connect With Me
             </h3>
             <div className="space-y-5">
@@ -103,7 +103,7 @@ export const ContactSection = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="w-full p-8 rounded-xl border border-border/50 bg-background shadow-sm"
           >
-            <h3 className="text-2xl font-semibold mb-8 text-main-text">
+            <h3 className="text-2xl font-semibold mb-8 text-primary">
               Send a Message
             </h3>
             <form className="space-y-6" onSubmit={handleSubmit}>
@@ -148,7 +148,7 @@ export const ContactSection = () => {
                   className="min-h-[140px] border-border/70 focus:border-primary"
                 />
               </div>
-              <Button className="w-full mt-4 hover:scale-99 text- bg-main-text text-white hover:bg-main-text/95">
+              <Button className="w-full mt-4 hover:scale-99 bg-primary text-primary-foreground hover:bg-primary/95">
                 Send Message
               </Button>
             </form>

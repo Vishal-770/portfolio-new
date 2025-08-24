@@ -5,6 +5,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion, Variants } from "framer-motion";
+import { AnimatedThemeToggler } from "./magicui/animated-theme-toggler";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -39,11 +40,15 @@ const Navbar = () => {
         animate="visible"
         variants={linkVariants}
       >
-        <Link href={item.href} className="no-cursor">
+        <Link 
+          href={item.href} 
+          className="no-cursor"
+          onClick={() => isMobile && setIsOpen(false)}
+        >
           <h1
             className={`${
-              pathname === item.href ? "text-main-text text-xl" : "text-xl"
-            } font-bold hover:text-main-text font-exo-2 ${
+              pathname === item.href ? "text-primary text-xl" : "text-xl text-foreground"
+            } font-bold hover:text-primary font-exo-2 transition-colors ${
               isMobile ? "w-full py-2" : ""
             }`}
           >
@@ -54,13 +59,13 @@ const Navbar = () => {
     ));
 
   return (
-    <nav className="w-full px-6 py-4 bg-background relative">
+    <nav className="w-full px-6 py-4 bg-background border-b border-border relative">
       <div className="flex w-full items-center justify-between">
         <motion.h1
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
-          className="font-bold font-exo-2 text-3xl"
+          className="font-bold font-exo-2 text-3xl text-foreground"
         >
           Vishal
         </motion.h1>
@@ -72,12 +77,13 @@ const Navbar = () => {
 
         {/* Icons on the right */}
         <div className="flex items-center gap-4">
+          <AnimatedThemeToggler className="text-foreground hover:text-primary transition-colors p-2 rounded-lg hover:bg-accent" />
           <Link href="/contact">
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.4 }}
-              className="bg-black rounded-full p-2 text-white hover:bg-black/70 hidden sm:block"
+              className="bg-primary text-primary-foreground rounded-full p-2 hover:bg-primary/90 transition-colors hidden sm:block"
             >
               <MailPlus />
             </motion.div>
@@ -85,7 +91,7 @@ const Navbar = () => {
 
           {/* Hamburger Menu */}
           <button
-            className="sm:hidden z-50"
+            className="sm:hidden z-50 text-foreground hover:text-primary transition-colors"
             onClick={toggleMenu}
             aria-label="Toggle Menu"
           >
@@ -109,9 +115,17 @@ const Navbar = () => {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -20, opacity: 0 }}
             transition={{ type: "tween", duration: 0.3 }}
-            className="absolute top-16 left-0 w-full bg-white border-t border-gray-200 flex flex-col gap-5 items-start px-6 py-4 sm:hidden z-40 shadow-md"
+            className="absolute top-16 left-0 w-full bg-background dark:bg-card border-t border-border flex flex-col gap-5 items-start px-6 py-4 sm:hidden z-40 shadow-lg"
           >
             {renderLinks(true)}
+            <div className="w-full pt-4 border-t border-border">
+              <Link href="/contact" onClick={() => setIsOpen(false)}>
+                <div className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
+                  <MailPlus size={20} />
+                  <span className="font-bold font-exo-2 text-xl">Contact</span>
+                </div>
+              </Link>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

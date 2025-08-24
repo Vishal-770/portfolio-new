@@ -68,21 +68,21 @@ const HeroSection = () => {
           animate="show"
         >
           <motion.h1
-            className="font-exo-2 text-3xl sm:text-4xl font-bold text-gray-700 lg:text-5xl"
+            className="font-exo-2 text-3xl sm:text-4xl font-bold text-muted-foreground lg:text-5xl"
             variants={item}
           >
             Hey, I'm Vishal 👋🏻
           </motion.h1>
 
           <motion.h2
-            className="font-exo-2 text-4xl sm:text-5xl font-extrabold text-black lg:text-5xl"
+            className="font-exo-2 text-4xl sm:text-5xl font-extrabold text-foreground lg:text-5xl"
             variants={item}
           >
-            <span className="text-main-text">Full Stack</span> Web Developer
+            <span className="text-primary">Full Stack</span> Web Developer
           </motion.h2>
 
           <motion.p
-            className="text-base sm:text-lg md:text-xl text-gray-600 font-exo-2 lg:text-2xl"
+            className="text-base sm:text-lg md:text-xl text-muted-foreground font-exo-2 lg:text-2xl"
             variants={item}
           >
             I'm a full stack developer based in India. I'll help you build
@@ -98,7 +98,7 @@ const HeroSection = () => {
               target="_blank"
               rel="noopener noreferrer"
               download
-              className="px-6 py-3 bg-main-text text-white rounded-xl font-semibold hover:bg-main-text/90 transition text-center"
+              className="px-6 py-3 bg-primary text-primary-foreground rounded-xl font-semibold hover:bg-primary/90 transition text-center"
               variants={buttonAnim}
               initial="rest"
               whileHover="hover"
@@ -109,7 +109,7 @@ const HeroSection = () => {
 
             <Link href="/projects">
               <motion.button
-                className="px-6 py-3 border border-gray-700 text-gray-700 rounded-xl font-semibold hover:bg-black/80 hover:text-white transition"
+                className="px-6 py-3 border border-border text-foreground rounded-xl font-semibold hover:bg-secondary hover:text-secondary-foreground transition"
                 variants={buttonAnim}
                 initial="rest"
                 whileHover="hover"
@@ -123,7 +123,7 @@ const HeroSection = () => {
 
         {/* Image Section */}
         <motion.div
-          className="relative w-full max-w-xs sm:max-w-sm md:max-w-md h-64 sm:h-80 md:h-96 bg-gray-100 rounded-3xl overflow-hidden shadow-inner"
+          className="relative w-full max-w-xs sm:max-w-sm md:max-w-md h-64 sm:h-80 md:h-96 bg-muted rounded-3xl overflow-hidden shadow-inner"
           variants={imageAnim}
           initial="hidden"
           animate="show"
